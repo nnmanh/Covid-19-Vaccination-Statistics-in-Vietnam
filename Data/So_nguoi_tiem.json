@@ -1,4 +1,4 @@
-{
+[
   {
     "date": "18/08/2021",
     "1st_dose_injected": 14359868,
@@ -464,4 +464,4 @@
     "1st_dose_injected": 66109343,
     "2nd_dose_injected": 38648926
   }
-}
+]
