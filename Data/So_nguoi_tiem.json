@@ -1,0 +1,467 @@
+[
+  {
+    "date": "18/08/2021",
+    "1st dose injected": 14359868,
+    "2nd dose injected": 1562669
+  },
+  {
+    "date": "19/08/2021",
+    "1st dose injected": 14669827,
+    "2nd dose injected": 1636372
+  },
+  {
+    "date": "20/08/2021",
+    "1st dose injected": 14787599,
+    "2nd dose injected": 1707066
+  },
+  {
+    "date": "21/08/2021",
+    "1st dose injected": 15274648,
+    "2nd dose injected": 1791248
+  },
+  {
+    "date": "22/08/2021",
+    "1st dose injected": 15530221,
+    "2nd dose injected": 1834348
+  },
+  {
+    "date": "23/08/2021",
+    "1st dose injected": 15725040,
+    "2nd dose injected": 1922313
+  },
+  {
+    "date": "24/08/2021",
+    "1st dose injected": 16056222,
+    "2nd dose injected": 2039251
+  },
+  {
+    "date": "25/08/2021",
+    "1st dose injected": 16382658,
+    "2nd dose injected": 2139545
+  },
+  {
+    "date": "26/08/2021",
+    "1st dose injected": 16607991,
+    "2nd dose injected": 2235013
+  },
+  {
+    "date": "27/08/2021",
+    "1st dose injected": 16822691,
+    "2nd dose injected": 2328431
+  },
+  {
+    "date": "28/08/2021",
+    "1st dose injected": 16999888,
+    "2nd dose injected": 2431205
+  },
+  {
+    "date": "29/08/2021",
+    "1st dose injected": 17186153,
+    "2nd dose injected": 2524407
+  },
+  {
+    "date": "30/08/2021",
+    "1st dose injected": 17347538,
+    "2nd dose injected": 2619186
+  },
+  {
+    "date": "31/08/2021",
+    "1st dose injected": 17483818,
+    "2nd dose injected": 2726563
+  },
+  {
+    "date": "01/09/2021",
+    "1st dose injected": 17660772,
+    "2nd dose injected": 2881553
+  },
+  {
+    "date": "02/09/2021",
+    "1st dose injected": 17872356,
+    "2nd dose injected": 2859122
+  },
+  {
+    "date": "03/09/2021",
+    "1st dose injected": 17998754,
+    "2nd dose injected": 3047525
+  },
+  {
+    "date": "04/09/2021",
+    "1st dose injected": 18246636,
+    "2nd dose injected": 3198545
+  },
+  {
+    "date": "05/09/2021",
+    "1st dose injected": 18673340,
+    "2nd dose injected": 3338783
+  },
+  {
+    "date": "06/09/2021",
+    "1st dose injected": 19213238,
+    "2nd dose injected": 3444406
+  },
+  {
+    "date": "07/09/2021",
+    "1st dose injected": 19809234,
+    "2nd dose injected": 3768683
+  },
+  {
+    "date": "08/09/2021",
+    "1st dose injected": 20591403,
+    "2nd dose injected": 4189782
+  },
+  {
+    "date": "09/09/2021",
+    "1st dose injected": 21459102,
+    "2nd dose injected": 4467586
+  },
+  {
+    "date": "10/09/2021",
+    "1st dose injected": 22367824,
+    "2nd dose injected": 4740764
+  },
+  {
+    "date": "11/09/2021",
+    "1st dose injected": 23157067,
+    "2nd dose injected": 5056325
+  },
+  {
+    "date": "12/09/2021",
+    "1st dose injected": 23954248,
+    "2nd dose injected": 5326059
+  },
+  {
+    "date": "13/09/2021",
+    "1st dose injected": 24727517,
+    "2nd dose injected": 5621403
+  },
+  {
+    "date": "14/09/2021",
+    "1st dose injected": 25420169,
+    "2nd dose injected": 5834687
+  },
+  {
+    "date": "15/09/2021",
+    "1st dose injected": 26307653,
+    "2nd dose injected": 5988864
+  },
+  {
+    "date": "16/09/2021",
+    "1st dose injected": 26821906,
+    "2nd dose injected": 6184726
+  },
+  {
+    "date": "17/09/2021",
+    "1st dose injected": 27208264,
+    "2nd dose injected": 6347095
+  },
+  {
+    "date": "18/09/2021",
+    "1st dose injected": 27577472,
+    "2nd dose injected": 6517771
+  },
+  {
+    "date": "19/09/2021",
+    "1st dose injected": 27913529,
+    "2nd dose injected": 6640061
+  },
+  {
+    "date": "20/09/2021",
+    "1st dose injected": 28288007,
+    "2nd dose injected": 6783707
+  },
+  {
+    "date": "21/09/2021",
+    "1st dose injected": 28745680,
+    "2nd dose injected": 6930160
+  },
+  {
+    "date": "22/09/2021",
+    "1st dose injected": 29094447,
+    "2nd dose injected": 7058109
+  },
+  {
+    "date": "23/09/2021",
+    "1st dose injected": 29534498,
+    "2nd dose injected": 7259412
+  },
+  {
+    "date": "24/09/2021",
+    "1st dose injected": 30027703,
+    "2nd dose injected": 7555545
+  },
+  {
+    "date": "25/09/2021",
+    "1st dose injected": 30420963,
+    "2nd dose injected": 7946283
+  },
+  {
+    "date": "26/09/2021",
+    "1st dose injected": 30946214,
+    "2nd dose injected": 8286558
+  },
+  {
+    "date": "27/09/2021",
+    "1st dose injected": 31497967,
+    "2nd dose injected": 8597064
+  },
+  {
+    "date": "28/09/2021",
+    "1st dose injected": 32171641,
+    "2nd dose injected": 8981400
+  },
+  {
+    "date": "29/09/2021",
+    "1st dose injected": 32669057,
+    "2nd dose injected": 9496111
+  },
+  {
+    "date": "30/09/2021",
+    "1st dose injected": 33069709,
+    "2nd dose injected": 9818448
+  },
+  {
+    "date": "01/10/2021",
+    "1st dose injected": 33532395,
+    "2nd dose injected": 10216423
+  },
+  {
+    "date": "02/10/2021",
+    "1st dose injected": 34155519,
+    "2nd dose injected": 10482392
+  },
+  {
+    "date": "03/10/2021",
+    "1st dose injected": 34622194,
+    "2nd dose injected": 10873929
+  },
+  {
+    "date": "04/10/2021",
+    "1st dose injected": 35355593,
+    "2nd dose injected": 11613917
+  },
+  {
+    "date": "05/10/2021",
+    "1st dose injected": 35933360,
+    "2nd dose injected": 12221677
+  },
+  {
+    "date": "06/10/2021",
+    "1st dose injected": 36448527,
+    "2nd dose injected": 12806398
+  },
+  {
+    "date": "07/10/2021",
+    "1st dose injected": 36901468,
+    "2nd dose injected": 13656820
+  },
+  {
+    "date": "08/10/2021",
+    "1st dose injected": 37725489,
+    "2nd dose injected": 14242628
+  },
+  {
+    "date": "09/10/2021",
+    "1st dose injected": 38259436,
+    "2nd dose injected": 14982533
+  },
+  {
+    "date": "10/10/2021",
+    "1st dose injected": 38698136,
+    "2nd dose injected": 15581428
+  },
+  {
+    "date": "11/10/2021",
+    "1st dose injected": 39088086,
+    "2nd dose injected": 16141038
+  },
+  {
+    "date": "12/10/2021",
+    "1st dose injected": 39837150,
+    "2nd dose injected": 16493600
+  },
+  {
+    "date": "13/10/2021",
+    "1st dose injected": 40654892,
+    "2nd dose injected": 16802200
+  },
+  {
+    "date": "14/10/2021",
+    "1st dose injected": 41811429,
+    "2nd dose injected": 17191810
+  },
+  {
+    "date": "15/10/2021",
+    "1st dose injected": 42896744,
+    "2nd dose injected": 17621950
+  },
+  {
+    "date": "16/10/2021",
+    "1st dose injected": 44070286,
+    "2nd dose injected": 17849651
+  },
+  {
+    "date": "17/10/2021",
+    "1st dose injected": 45281937,
+    "2nd dose injected": 18152243
+  },
+  {
+    "date": "18/10/2021",
+    "1st dose injected": 46493751,
+    "2nd dose injected": 18498737
+  },
+  {
+    "date": "19/10/2021",
+    "1st dose injected": 47997541,
+    "2nd dose injected": 19086016
+  },
+  {
+    "date": "20/10/2021",
+    "1st dose injected": 49352317,
+    "2nd dose injected": 19457563
+  },
+  {
+    "date": "21/10/2021",
+    "1st dose injected": 50334724,
+    "2nd dose injected": 20153970
+  },
+  {
+    "date": "22/10/2021",
+    "1st dose injected": 51157792,
+    "2nd dose injected": 20731417
+  },
+  {
+    "date": "23/10/2021",
+    "1st dose injected": 51883474,
+    "2nd dose injected": 21045837
+  },
+  {
+    "date": "24/10/2021",
+    "1st dose injected": 52584839,
+    "2nd dose injected": 21465198
+  },
+  {
+    "date": "25/10/2021",
+    "1st dose injected": 53125886,
+    "2nd dose injected": 21824507
+  },
+  {
+    "date": "26/10/2021",
+    "1st dose injected": 53738466,
+    "2nd dose injected": 22232406
+  },
+  {
+    "date": "27/10/2021",
+    "1st dose injected": 54520772,
+    "2nd dose injected": 22624840
+  },
+  {
+    "date": "28/10/2021",
+    "1st dose injected": 55578783,
+    "2nd dose injected": 23361620
+  },
+  {
+    "date": "29/10/2021",
+    "1st dose injected": 56616780,
+    "2nd dose injected": 23911790
+  },
+  {
+    "date": "30/10/2021",
+    "1st dose injected": 57044159,
+    "2nd dose injected": 24331217
+  },
+  {
+    "date": "31/10/2021",
+    "1st dose injected": 57332644,
+    "2nd dose injected": 24597231
+  },
+  {
+    "date": "01/11/2021",
+    "1st dose injected": 58013895,
+    "2nd dose injected": 25117569
+  },
+  {
+    "date": "02/11/2021",
+    "1st dose injected": 58449622,
+    "2nd dose injected": 25641277
+  },
+  {
+    "date": "03/11/2021",
+    "1st dose injected": 58807646,
+    "2nd dose injected": 26076428
+  },
+  {
+    "date": "04/11/2021",
+    "1st dose injected": 59355699,
+    "2nd dose injected": 26964109
+  },
+  {
+    "date": "05/11/2021",
+    "1st dose injected": 60260916,
+    "2nd dose injected": 28143967
+  },
+  {
+    "date": "06/11/2021",
+    "1st dose injected": 60845405,
+    "2nd dose injected": 28775296
+  },
+  {
+    "date": "07/11/2021",
+    "1st dose injected": 61351423,
+    "2nd dose injected": 29333128
+  },
+  {
+    "date": "08/11/2021",
+    "1st dose injected": 61907563,
+    "2nd dose injected": 30303767
+  },
+  {
+    "date": "09/11/2021",
+    "1st dose injected": 62806992,
+    "2nd dose injected": 31155673
+  },
+  {
+    "date": "10/11/2021",
+    "1st dose injected": 63502556,
+    "2nd dose injected": 32072851
+  },
+  {
+    "date": "11/11/2021",
+    "1st dose injected": 63682168,
+    "2nd dose injected": 32875284
+  },
+  {
+    "date": "12/11/2021",
+    "1st dose injected": 64973710,
+    "2nd dose injected": 33758048
+  },
+  {
+    "date": "13/11/2021",
+    "1st dose injected": 64322087,
+    "2nd dose injected": 34608484
+  },
+  {
+    "date": "14/11/2021",
+    "1st dose injected": 64467940,
+    "2nd dose injected": 35283284
+  },
+  {
+    "date": "15/11/2021",
+    "1st dose injected": 64767521,
+    "2nd dose injected": 36095377
+  },
+  {
+    "date": "16/11/2021",
+    "1st dose injected": 65222953,
+    "2nd dose injected": 36807623
+  },
+  {
+    "date": "17/11/2021",
+    "1st dose injected": 65773861,
+    "2nd dose injected": 37800104
+  },
+  {
+    "date": "18/11/2021",
+    "1st dose injected": 66109343,
+    "2nd dose injected": 38648926
+  }
+]
