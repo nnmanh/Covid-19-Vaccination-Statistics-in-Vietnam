@@ -20,6 +20,7 @@ export const VaccinationsChart = () => {
                 secondDose.push(dataObj['Second dose injected'])
                 average.push(dataObj['7-day average'])
             }
+            console.log(res.data)
             setchartdata({
                 labels:date,
                 datasets:[

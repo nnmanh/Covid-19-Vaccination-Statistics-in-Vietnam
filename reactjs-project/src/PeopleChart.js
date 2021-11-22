@@ -1,7 +1,7 @@
 import React from 'react';
 import {Line} from "react-chartjs-2";
 
-class App extends React.Component {
+class PeopleChart extends React.Component {
   constructor(props) {
     super(props);
     this.state = {date: null, first : null, second : null}
@@ -66,5 +66,5 @@ class App extends React.Component {
     )
   }
 }
-export default App
+export default PeopleChart
 
