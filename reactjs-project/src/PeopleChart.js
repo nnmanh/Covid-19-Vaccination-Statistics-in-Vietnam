@@ -43,24 +43,47 @@ class PeopleChart extends React.Component {
             datasets : [
               {
                 label: "Second Dose Injected",
-                data: this.state.second,
-                backgroundColor: "#427265",
+                backgroundColor: "#FFC7A1",
                 fill: true,
-                borderColor: "white"
+                tension: 0.4,
+                borderColor: "orange",
+                borderCapStyle: 'butt',
+                borderDash: [],
+                borderDashOffset: 0.0,
+                borderJoinStyle: 'miter', 
+                pointBorderColor: "orange",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 6,
+                pointHoverRadius: 6,
+                pointHoverBackgroundColor: "rgba (75, 192, 192, 1)",
+                pointHoverBorderColor: "rgba (220, 220, 220, 1)",
+                pointRadius: 1,
+                pointHitRadius: 10,
+                data: this.state.second,
               },
               {
                 label: "First Dose Injected",
                 data: this.state.first,
-                backgroundColor: '#6f9554',
-                
+                backgroundColor: "#A1D7FF",
                 fill: true,
-                borderColor: "black"
+                lineTension: 0.1,
+                borderColor: "blue",
+                borderDash: [],
+                borderDashOffset: 0.0,
+                pointBorderColor: "blue",
+                pointBackgroundColor: "#fff",
+                pointBorderWidth: 6,
+                pointHoverRadius: 6,
+                pointHoverBackgroundColor: "rgba (75, 72, 192, 1)",
+                pointHoverBorderColor: "black",
+                pointRadius: 1,
+                pointHitRadius: 10
+                
               }
-              
-            ]} 
+          ],
           }
-    
-      
+        }  
+              
     /> 
     </div>
     )
