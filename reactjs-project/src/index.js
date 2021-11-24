@@ -13,6 +13,14 @@ ReactDOM.render(
       <VaccinationsChart />
     </div>
 
+    <div>
+      <PeopleChart />
+    </div>
+
+    <div>
+      <Map />
+      <BarChart />
+    </div>
     
     
 
