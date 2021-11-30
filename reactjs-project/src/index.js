@@ -4,11 +4,15 @@ import Map from './Map';
 import BarChart from './BarChart';
 import { VaccinationsChart } from './VaccinationsChart';
 import PeopleChart from './PeopleChart';
+import Count from './Count';
 
 
 ReactDOM.render(
   <>
     <h1>Welcome to embedded Tableau</h1>
+    <div>
+      <Count />
+    </div>
     <div>
       <VaccinationsChart />
     </div>
