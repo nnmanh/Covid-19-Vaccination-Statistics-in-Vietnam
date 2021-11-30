@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { Bar } from 'react-chartjs-2'
 import axios from 'axios'
 
-export const VaccinationsChart3 = () => {
+export const VaccinationsChart1 = () => {
     const [chartdata, setchartdata] = useState()
 
     const chart=()=> {
