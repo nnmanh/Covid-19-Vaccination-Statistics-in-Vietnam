@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { Bar } from 'react-chartjs-2'
 import axios from 'axios'
 
-export const VaccinationsChart3 = () => {
+export default function VaccinationsChart3() {
     const [chartdata, setchartdata] = useState()
 
     const chart=()=> {
@@ -12,7 +12,7 @@ export const VaccinationsChart3 = () => {
         var secondDose = []
         var average = []
 
-        axios.get("https://raw.githubusercontent.com/VinceTruong/Visual_Analysis_Project/anhngo/Data/Vaccinations%20per%20day/Vaccinations%20per%20day.json")
+        axios.get("https://raw.githubusercontent.com/VinceTruong/Visual_Analysis_Project/main/Data/Vaccinations%20per%20day/Vaccinations%20per%20day3.json")
         .then(res =>{
             for (const dataObj of res.data) {
                 date.push(dataObj.Date)
