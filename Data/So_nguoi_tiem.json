@@ -1,467 +1,467 @@
 [
   {
     "date": "2021-08-18",
-    "1st_dose_injected": 14359868,
-    "2nd_dose_injected": 1562669
+    "first_dose_injected": 14359868,
+    "second_dose_injected": 1562669
   },
   {
     "date": "2021-08-19",
-    "1st_dose_injected": 14669827,
-    "2nd_dose_injected": 1636372
+    "first_dose_injected": 14669827,
+    "second_dose_injected": 1636372
   },
   {
     "date": "2021-08-20",
-    "1st_dose_injected": 14787599,
-    "2nd_dose_injected": 1707066
+    "first_dose_injected": 14787599,
+    "second_dose_injected": 1707066
   },
   {
     "date": "2021-08-21",
-    "1st_dose_injected": 15274648,
-    "2nd_dose_injected": 1791248
+    "first_dose_injected": 15274648,
+    "second_dose_injected": 1791248
   },
   {
     "date": "2021-08-22",
-    "1st_dose_injected": 15530221,
-    "2nd_dose_injected": 1834348
+    "first_dose_injected": 15530221,
+    "second_dose_injected": 1834348
   },
   {
     "date": "2021-08-23",
-    "1st_dose_injected": 15725040,
-    "2nd_dose_injected": 1922313
+    "first_dose_injected": 15725040,
+    "second_dose_injected": 1922313
   },
   {
     "date": "2021-08-24",
-    "1st_dose_injected": 16056222,
-    "2nd_dose_injected": 2039251
+    "first_dose_injected": 16056222,
+    "second_dose_injected": 2039251
   },
   {
     "date": "2021-08-25",
-    "1st_dose_injected": 16382658,
-    "2nd_dose_injected": 2139545
+    "first_dose_injected": 16382658,
+    "second_dose_injected": 2139545
   },
   {
     "date": "2021-08-26",
-    "1st_dose_injected": 16607991,
-    "2nd_dose_injected": 2235013
+    "first_dose_injected": 16607991,
+    "second_dose_injected": 2235013
   },
   {
     "date": "2021-08-27",
-    "1st_dose_injected": 16822691,
-    "2nd_dose_injected": 2328431
+    "first_dose_injected": 16822691,
+    "second_dose_injected": 2328431
   },
   {
     "date": "2021-08-28",
-    "1st_dose_injected": 16999888,
-    "2nd_dose_injected": 2431205
+    "first_dose_injected": 16999888,
+    "second_dose_injected": 2431205
   },
   {
     "date": "2021-08-29",
-    "1st_dose_injected": 17186153,
-    "2nd_dose_injected": 2524407
+    "first_dose_injected": 17186153,
+    "second_dose_injected": 2524407
   },
   {
     "date": "2021-08-30",
-    "1st_dose_injected": 17347538,
-    "2nd_dose_injected": 2619186
+    "first_dose_injected": 17347538,
+    "second_dose_injected": 2619186
   },
   {
     "date": "2021-08-31",
-    "1st_dose_injected": 17483818,
-    "2nd_dose_injected": 2726563
+    "first_dose_injected": 17483818,
+    "second_dose_injected": 2726563
   },
   {
     "date": "2021-09-01",
-    "1st_dose_injected": 17660772,
-    "2nd_dose_injected": 2881553
+    "first_dose_injected": 17660772,
+    "second_dose_injected": 2881553
   },
   {
     "date": "2021-09-02",
-    "1st_dose_injected": 17872356,
-    "2nd_dose_injected": 2859122
+    "first_dose_injected": 17872356,
+    "second_dose_injected": 2859122
   },
   {
     "date": "2021-09-03",
-    "1st_dose_injected": 17998754,
-    "2nd_dose_injected": 3047525
+    "first_dose_injected": 17998754,
+    "second_dose_injected": 3047525
   },
   {
     "date": "2021-09-04",
-    "1st_dose_injected": 18246636,
-    "2nd_dose_injected": 3198545
+    "first_dose_injected": 18246636,
+    "second_dose_injected": 3198545
   },
   {
     "date": "2021-09-05",
-    "1st_dose_injected": 18673340,
-    "2nd_dose_injected": 3338783
+    "first_dose_injected": 18673340,
+    "second_dose_injected": 3338783
   },
   {
     "date": "2021-09-06",
-    "1st_dose_injected": 19213238,
-    "2nd_dose_injected": 3444406
+    "first_dose_injected": 19213238,
+    "second_dose_injected": 3444406
   },
   {
     "date": "2021-09-07",
-    "1st_dose_injected": 19809234,
-    "2nd_dose_injected": 3768683
+    "first_dose_injected": 19809234,
+    "second_dose_injected": 3768683
   },
   {
     "date": "2021-09-08",
-    "1st_dose_injected": 20591403,
-    "2nd_dose_injected": 4189782
+    "first_dose_injected": 20591403,
+    "second_dose_injected": 4189782
   },
   {
     "date": "2021-09-09",
-    "1st_dose_injected": 21459102,
-    "2nd_dose_injected": 4467586
+    "first_dose_injected": 21459102,
+    "second_dose_injected": 4467586
   },
   {
     "date": "2021-09-10",
-    "1st_dose_injected": 22367824,
-    "2nd_dose_injected": 4740764
+    "first_dose_injected": 22367824,
+    "second_dose_injected": 4740764
   },
   {
     "date": "2021-09-11",
-    "1st_dose_injected": 23157067,
-    "2nd_dose_injected": 5056325
+    "first_dose_injected": 23157067,
+    "second_dose_injected": 5056325
   },
   {
     "date": "2021-09-12",
-    "1st_dose_injected": 23954248,
-    "2nd_dose_injected": 5326059
+    "first_dose_injected": 23954248,
+    "second_dose_injected": 5326059
   },
   {
     "date": "2021-09-13",
-    "1st_dose_injected": 24727517,
-    "2nd_dose_injected": 5621403
+    "first_dose_injected": 24727517,
+    "second_dose_injected": 5621403
   },
   {
     "date": "2021-09-14",
-    "1st_dose_injected": 25420169,
-    "2nd_dose_injected": 5834687
+    "first_dose_injected": 25420169,
+    "second_dose_injected": 5834687
   },
   {
     "date": "2021-09-15",
-    "1st_dose_injected": 26307653,
-    "2nd_dose_injected": 5988864
+    "first_dose_injected": 26307653,
+    "second_dose_injected": 5988864
   },
   {
     "date": "2021-09-16",
-    "1st_dose_injected": 26821906,
-    "2nd_dose_injected": 6184726
+    "first_dose_injected": 26821906,
+    "second_dose_injected": 6184726
   },
   {
     "date": "2021-09-17",
-    "1st_dose_injected": 27208264,
-    "2nd_dose_injected": 6347095
+    "first_dose_injected": 27208264,
+    "second_dose_injected": 6347095
   },
   {
     "date": "2021-09-18",
-    "1st_dose_injected": 27577472,
-    "2nd_dose_injected": 6517771
+    "first_dose_injected": 27577472,
+    "second_dose_injected": 6517771
   },
   {
     "date": "2021-09-19",
-    "1st_dose_injected": 27913529,
-    "2nd_dose_injected": 6640061
+    "first_dose_injected": 27913529,
+    "second_dose_injected": 6640061
   },
   {
     "date": "2021-09-20",
-    "1st_dose_injected": 28288007,
-    "2nd_dose_injected": 6783707
+    "first_dose_injected": 28288007,
+    "second_dose_injected": 6783707
   },
   {
     "date": "2021-09-21",
-    "1st_dose_injected": 28745680,
-    "2nd_dose_injected": 6930160
+    "first_dose_injected": 28745680,
+    "second_dose_injected": 6930160
   },
   {
     "date": "2021-09-22",
-    "1st_dose_injected": 29094447,
-    "2nd_dose_injected": 7058109
+    "first_dose_injected": 29094447,
+    "second_dose_injected": 7058109
   },
   {
     "date": "2021-09-23",
-    "1st_dose_injected": 29534498,
-    "2nd_dose_injected": 7259412
+    "first_dose_injected": 29534498,
+    "second_dose_injected": 7259412
   },
   {
     "date": "2021-09-24",
-    "1st_dose_injected": 30027703,
-    "2nd_dose_injected": 7555545
+    "first_dose_injected": 30027703,
+    "second_dose_injected": 7555545
   },
   {
     "date": "2021-09-25",
-    "1st_dose_injected": 30420963,
-    "2nd_dose_injected": 7946283
+    "first_dose_injected": 30420963,
+    "second_dose_injected": 7946283
   },
   {
     "date": "2021-09-26",
-    "1st_dose_injected": 30946214,
-    "2nd_dose_injected": 8286558
+    "first_dose_injected": 30946214,
+    "second_dose_injected": 8286558
   },
   {
     "date": "2021-09-27",
-    "1st_dose_injected": 31497967,
-    "2nd_dose_injected": 8597064
+    "first_dose_injected": 31497967,
+    "second_dose_injected": 8597064
   },
   {
     "date": "2021-09-28",
-    "1st_dose_injected": 32171641,
-    "2nd_dose_injected": 8981400
+    "first_dose_injected": 32171641,
+    "second_dose_injected": 8981400
   },
   {
     "date": "2021-09-29",
-    "1st_dose_injected": 32669057,
-    "2nd_dose_injected": 9496111
+    "first_dose_injected": 32669057,
+    "second_dose_injected": 9496111
   },
   {
     "date": "2021-09-30",
-    "1st_dose_injected": 33069709,
-    "2nd_dose_injected": 9818448
+    "first_dose_injected": 33069709,
+    "second_dose_injected": 9818448
   },
   {
     "date": "2021-10-01",
-    "1st_dose_injected": 33532395,
-    "2nd_dose_injected": 10216423
+    "first_dose_injected": 33532395,
+    "second_dose_injected": 10216423
   },
   {
     "date": "2021-10-02",
-    "1st_dose_injected": 34155519,
-    "2nd_dose_injected": 10482392
+    "first_dose_injected": 34155519,
+    "second_dose_injected": 10482392
   },
   {
     "date": "2021-10-03",
-    "1st_dose_injected": 34622194,
-    "2nd_dose_injected": 10873929
+    "first_dose_injected": 34622194,
+    "second_dose_injected": 10873929
   },
   {
     "date": "2021-10-04",
-    "1st_dose_injected": 35355593,
-    "2nd_dose_injected": 11613917
+    "first_dose_injected": 35355593,
+    "second_dose_injected": 11613917
   },
   {
     "date": "2021-10-05",
-    "1st_dose_injected": 35933360,
-    "2nd_dose_injected": 12221677
+    "first_dose_injected": 35933360,
+    "second_dose_injected": 12221677
   },
   {
     "date": "2021-10-06",
-    "1st_dose_injected": 36448527,
-    "2nd_dose_injected": 12806398
+    "first_dose_injected": 36448527,
+    "second_dose_injected": 12806398
   },
   {
     "date": "2021-10-07",
-    "1st_dose_injected": 36901468,
-    "2nd_dose_injected": 13656820
+    "first_dose_injected": 36901468,
+    "second_dose_injected": 13656820
   },
   {
     "date": "2021-10-08",
-    "1st_dose_injected": 37725489,
-    "2nd_dose_injected": 14242628
+    "first_dose_injected": 37725489,
+    "second_dose_injected": 14242628
   },
   {
     "date": "2021-10-09",
-    "1st_dose_injected": 38259436,
-    "2nd_dose_injected": 14982533
+    "first_dose_injected": 38259436,
+    "second_dose_injected": 14982533
   },
   {
     "date": "2021-10-10",
-    "1st_dose_injected": 38698136,
-    "2nd_dose_injected": 15581428
+    "first_dose_injected": 38698136,
+    "second_dose_injected": 15581428
   },
   {
     "date": "2021-10-11",
-    "1st_dose_injected": 39088086,
-    "2nd_dose_injected": 16141038
+    "first_dose_injected": 39088086,
+    "second_dose_injected": 16141038
   },
   {
     "date": "2021-10-12",
-    "1st_dose_injected": 39837150,
-    "2nd_dose_injected": 16493600
+    "first_dose_injected": 39837150,
+    "second_dose_injected": 16493600
   },
   {
     "date": "2021-10-13",
-    "1st_dose_injected": 40654892,
-    "2nd_dose_injected": 16802200
+    "first_dose_injected": 40654892,
+    "second_dose_injected": 16802200
   },
   {
     "date": "2021-10-14",
-    "1st_dose_injected": 41811429,
-    "2nd_dose_injected": 17191810
+    "first_dose_injected": 41811429,
+    "second_dose_injected": 17191810
   },
   {
     "date": "2021-10-15",
-    "1st_dose_injected": 42896744,
-    "2nd_dose_injected": 17621950
+    "first_dose_injected": 42896744,
+    "second_dose_injected": 17621950
   },
   {
     "date": "2021-10-16",
-    "1st_dose_injected": 44070286,
-    "2nd_dose_injected": 17849651
+    "first_dose_injected": 44070286,
+    "second_dose_injected": 17849651
   },
   {
     "date": "2021-10-17",
-    "1st_dose_injected": 45281937,
-    "2nd_dose_injected": 18152243
+    "first_dose_injected": 45281937,
+    "second_dose_injected": 18152243
   },
   {
     "date": "2021-10-18",
-    "1st_dose_injected": 46493751,
-    "2nd_dose_injected": 18498737
+    "first_dose_injected": 46493751,
+    "second_dose_injected": 18498737
   },
   {
     "date": "2021-10-19",
-    "1st_dose_injected": 47997541,
-    "2nd_dose_injected": 19086016
+    "first_dose_injected": 47997541,
+    "second_dose_injected": 19086016
   },
   {
     "date": "2021-10-20",
-    "1st_dose_injected": 49352317,
-    "2nd_dose_injected": 19457563
+    "first_dose_injected": 49352317,
+    "second_dose_injected": 19457563
   },
   {
     "date": "2021-10-21",
-    "1st_dose_injected": 50334724,
-    "2nd_dose_injected": 20153970
+    "first_dose_injected": 50334724,
+    "second_dose_injected": 20153970
   },
   {
     "date": "2021-10-22",
-    "1st_dose_injected": 51157792,
-    "2nd_dose_injected": 20731417
+    "first_dose_injected": 51157792,
+    "second_dose_injected": 20731417
   },
   {
     "date": "2021-10-23",
-    "1st_dose_injected": 51883474,
-    "2nd_dose_injected": 21045837
+    "first_dose_injected": 51883474,
+    "second_dose_injected": 21045837
   },
   {
     "date": "2021-10-24",
-    "1st_dose_injected": 52584839,
-    "2nd_dose_injected": 21465198
+    "first_dose_injected": 52584839,
+    "second_dose_injected": 21465198
   },
   {
     "date": "2021-10-25",
-    "1st_dose_injected": 53125886,
-    "2nd_dose_injected": 21824507
+    "first_dose_injected": 53125886,
+    "second_dose_injected": 21824507
   },
   {
     "date": "2021-10-26",
-    "1st_dose_injected": 53738466,
-    "2nd_dose_injected": 22232406
+    "first_dose_injected": 53738466,
+    "second_dose_injected": 22232406
   },
   {
     "date": "2021-10-27",
-    "1st_dose_injected": 54520772,
-    "2nd_dose_injected": 22624840
+    "first_dose_injected": 54520772,
+    "second_dose_injected": 22624840
   },
   {
     "date": "2021-10-28",
-    "1st_dose_injected": 55578783,
-    "2nd_dose_injected": 23361620
+    "first_dose_injected": 55578783,
+    "second_dose_injected": 23361620
   },
   {
     "date": "2021-10-29",
-    "1st_dose_injected": 56616780,
-    "2nd_dose_injected": 23911790
+    "first_dose_injected": 56616780,
+    "second_dose_injected": 23911790
   },
   {
     "date": "2021-10-30",
-    "1st_dose_injected": 57044159,
-    "2nd_dose_injected": 24331217
+    "first_dose_injected": 57044159,
+    "second_dose_injected": 24331217
   },
   {
     "date": "2021-10-31",
-    "1st_dose_injected": 57332644,
-    "2nd_dose_injected": 24597231
+    "first_dose_injected": 57332644,
+    "second_dose_injected": 24597231
   },
   {
     "date": "2021-11-01",
-    "1st_dose_injected": 58013895,
-    "2nd_dose_injected": 25117569
+    "first_dose_injected": 58013895,
+    "second_dose_injected": 25117569
   },
   {
     "date": "2021-11-02",
-    "1st_dose_injected": 58449622,
-    "2nd_dose_injected": 25641277
+    "first_dose_injected": 58449622,
+    "second_dose_injected": 25641277
   },
   {
     "date": "2021-11-03",
-    "1st_dose_injected": 58807646,
-    "2nd_dose_injected": 26076428
+    "first_dose_injected": 58807646,
+    "second_dose_injected": 26076428
   },
   {
     "date": "2021-11-04",
-    "1st_dose_injected": 59355699,
-    "2nd_dose_injected": 26964109
+    "first_dose_injected": 59355699,
+    "second_dose_injected": 26964109
   },
   {
     "date": "2021-11-05",
-    "1st_dose_injected": 60260916,
-    "2nd_dose_injected": 28143967
+    "first_dose_injected": 60260916,
+    "second_dose_injected": 28143967
   },
   {
     "date": "2021-11-06",
-    "1st_dose_injected": 60845405,
-    "2nd_dose_injected": 28775296
+    "first_dose_injected": 60845405,
+    "second_dose_injected": 28775296
   },
   {
     "date": "2021-11-07",
-    "1st_dose_injected": 61351423,
-    "2nd_dose_injected": 29333128
+    "first_dose_injected": 61351423,
+    "second_dose_injected": 29333128
   },
   {
     "date": "2021-11-08",
-    "1st_dose_injected": 61907563,
-    "2nd_dose_injected": 30303767
+    "first_dose_injected": 61907563,
+    "second_dose_injected": 30303767
   },
   {
     "date": "2021-11-09",
-    "1st_dose_injected": 62806992,
-    "2nd_dose_injected": 31155673
+    "first_dose_injected": 62806992,
+    "second_dose_injected": 31155673
   },
   {
     "date": "2021-11-10",
-    "1st_dose_injected": 63502556,
-    "2nd_dose_injected": 32072851
+    "first_dose_injected": 63502556,
+    "second_dose_injected": 32072851
   },
   {
     "date": "2021-11-11",
-    "1st_dose_injected": 63682168,
-    "2nd_dose_injected": 32875284
+    "first_dose_injected": 63682168,
+    "second_dose_injected": 32875284
   },
   {
     "date": "2021-11-12",
-    "1st_dose_injected": 64973710,
-    "2nd_dose_injected": 33758048
+    "first_dose_injected": 64973710,
+    "second_dose_injected": 33758048
   },
   {
     "date": "2021-11-13",
-    "1st_dose_injected": 64322087,
-    "2nd_dose_injected": 34608484
+    "first_dose_injected": 64322087,
+    "second_dose_injected": 34608484
   },
   {
     "date": "2021-11-14",
-    "1st_dose_injected": 64467940,
-    "2nd_dose_injected": 35283284
+    "first_dose_injected": 64467940,
+    "second_dose_injected": 35283284
   },
   {
     "date": "2021-11-15",
-    "1st_dose_injected": 64767521,
-    "2nd_dose_injected": 36095377
+    "first_dose_injected": 64767521,
+    "second_dose_injected": 36095377
   },
   {
     "date": "2021-11-16",
-    "1st_dose_injected": 65222953,
-    "2nd_dose_injected": 36807623
+    "first_dose_injected": 65222953,
+    "second_dose_injected": 36807623
   },
   {
     "date": "2021-11-17",
-    "1st_dose_injected": 65773861,
-    "2nd_dose_injected": 37800104
+    "first_dose_injected": 65773861,
+    "second_dose_injected": 37800104
   },
   {
     "date": "2021-11-18",
-    "1st_dose_injected": 66109343,
-    "2nd_dose_injected": 38648926
+    "first_dose_injected": 66109343,
+    "second_dose_injected": 38648926
   }
 ]
