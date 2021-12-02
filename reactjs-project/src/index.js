@@ -13,6 +13,7 @@ ReactDOM.render(
     <div>
       <Count />
     </div>
+    
     <div>
       <VaccinationsChart />
     </div>
