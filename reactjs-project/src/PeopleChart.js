@@ -1,157 +1,290 @@
 
 import React, { useEffect, useState } from 'react';
-import { Line } from "react-chartjs-2";
+import { Line, Bar } from "react-chartjs-2";
 
 
 function PeopleChart() {
-  const [date_, setDate] = useState(null)
-  const [first_, setFirst] = useState(null)
-  const [second_, setSecond] = useState(null)
+  const [date_people, setDatePeople] = useState(null)
+  const [first_people, setFirstPeople] = useState(null)
+  const [second_people, setSecondPeople] = useState(null)
 
-  const [filteredDate, setfDate] = useState(null)
-  const [filteredFirst, setfFirst] = useState(null)
-  const [filteredSecond, setfSecond] = useState(null)
+  const [filteredDatePeople, setfDatePeople] = useState(null)
+  const [filteredFirstPeople, setfFirstPeople] = useState(null)
+  const [filteredSecondPeople, setfSecondPeople] = useState(null)
+
+  const [average_vac, setAverageVac] = useState(null)
+  const [date_vac, setDateVac] = useState(null)
+  const [firstDose_vac, setFirstVac] = useState(null)
+  const [secondDose_vac, setSecondVac] = useState(null)
+
+  const [filteredDate_vac, setfDateVac] = useState(null)
+  const [filteredFirst_vac, setfFirstVac] = useState(null)
+  const [filteredSecond_vac, setfSecondVac] = useState(null)
+  const [filteredAverage_vac, setfAverageVac] = useState(null)
 
 
-  var date = []
-  var first = []
-  var second = []
+
   useEffect(async () => {
-    const url = 'https://raw.githubusercontent.com/VinceTruong/Visual_Analysis_Project/main/Data/So_nguoi_tiem.json'
-    const response = await fetch(url);
-    const datapoints = await response.json()
-    for (const objects of datapoints) {
-      date.push(objects.date)
-      first.push(objects['first_dose_injected'])
-      second.push(objects['second_dose_injected'])
+    var date_people_ = []
+    var first_people_ = []
+    var second_people_ = []
+
+    var date_vac_ = []
+    var firstDose_vac_ = []
+    var secondDose_vac_ = []
+    var average_vac_ = []
+
+
+    const url_people = 'https://raw.githubusercontent.com/VinceTruong/Visual_Analysis_Project/main/Data/So_nguoi_tiem.json'
+    const response_people = await fetch(url_people);
+    const datapoints_people = await response_people.json()
+    for (const objects of datapoints_people) {
+      date_people_.push(objects.date)
+      first_people_.push(objects['first_dose_injected'])
+      second_people_.push(objects['second_dose_injected'])
     }
-    setDate(date)
-    setFirst(first)
-    setSecond(second)
-    setfDate(date)
-    setfFirst(first)
-    setfSecond(second)
+
+    const url_vac = "https://raw.githubusercontent.com/VinceTruong/Visual_Analysis_Project/main/Data/Vaccinations%20per%20day/Vaccinations%20per%20day3.json"
+    const response_vac = await fetch(url_vac)
+    const data_vac = await response_vac.json()
+    for (const dataObj of data_vac) {
+      date_vac_.push(dataObj['Date'])
+      firstDose_vac_.push(dataObj['First dose injected'])
+      secondDose_vac_.push(dataObj['Second dose injected'])
+      average_vac_.push(dataObj['7-day average'])
+    }
+
+
+
+    setDatePeople(date_people_)
+    setFirstPeople(first_people_)
+    setSecondPeople(second_people_)
+    setfDatePeople(date_people_)
+    setfFirstPeople(first_people_)
+    setfSecondPeople(second_people_)
+
+    setAverageVac(average_vac_)
+    setFirstVac(firstDose_vac_)
+    setSecondVac(secondDose_vac_)
+    setDateVac(date_vac_)
+
+    setfDateVac(date_vac_)
+    setfAverageVac(average_vac_)
+    setfFirstVac(firstDose_vac_)
+    setfSecondVac(secondDose_vac_)
 
   }, []);
   function changeDate() {
-    const date_2 = [...date_]
-    const first_2 = [...first_]
-    const second_2 = [...second_]
+    const date_people2 = [...date_people]
+    const first_people2 = [...first_people]
+    const second_people2 = [...second_people]
+
+    const first_vac2 = [...firstDose_vac]
+    const second_vac2 = [...secondDose_vac]
+    const average_vac2 = [...average_vac]
+
     const startdate = document.getElementById('startdate');
     const enddate = document.getElementById('enddate');
-    const indexstartdate = date_2.indexOf(startdate.value)
-    const indexenddate = date_2.indexOf(enddate.value)
+    const indexstartdate = date_people2.indexOf(startdate.value)
+    const indexenddate = date_people2.indexOf(enddate.value)
 
-    setfDate(date_2.slice(indexstartdate, indexenddate + 1))
-    setfFirst(first_2.slice(indexstartdate, indexenddate + 1))
-    setfSecond(second_2.slice(indexstartdate, indexenddate + 1))
+    setfDatePeople(date_people2.slice(indexstartdate, indexenddate + 1))
+    setfFirstPeople(first_people2.slice(indexstartdate, indexenddate + 1))
+    setfSecondPeople(second_people2.slice(indexstartdate, indexenddate + 1))
+
+    setfDateVac(date_people2.slice(indexstartdate, indexenddate + 1))
+    setfFirstVac(first_vac2.slice(indexstartdate, indexenddate + 1))
+    setfSecondVac(second_vac2.slice(indexstartdate, indexenddate + 1))
+    setfAverageVac(average_vac2.slice(indexstartdate, indexenddate + 1))
   }
   return (
     <div>
-      <div>
-        
-      </div>
-      <div style = {{textAlign : 'center'}}>
+      <div style={{ textAlign: 'center' }}>
         <input onChange={changeDate} type="date" id="startdate" defaultValue='2021-08-18' />
-        <input onChange={changeDate} type="date" id="enddate" defaultValue='2021-11-18' />
+        <input onChange={changeDate} type="date" id="enddate" defaultValue= "2021-11-18"/>
       </div>
-      <div>
-        <Line
-          data={{
-            labels: filteredDate,
-            datasets: [
-              {
-                type : "line",
-                label: "Second Dose Injected",
-                backgroundColor: "#b0c7c0",
-                borderColor: "#2f7365",
-                fill: true,
-                tension: 1.0,
-                pointHoverRadius: 6,
-                pointHoverBackgroundColor: "#2f7365",
-                pointHoverBorderColor: "white",
-                pointHitRadius: 10,
-                pointRadius: 1,
-                data: filteredSecond,
-              },
-              {
-                label: "First Dose Injected",
-                data: filteredFirst,
-                backgroundColor: "#d7e3e0",
-                borderColor: "#63974b",
-                fill: true,
-                lineTension: 0.1,
-                pointBackgroundColor: "#63974b",
-                pointHoverRadius: 6,
-                pointHoverBackgroundColor: "#63974b",
-                pointHoverBorderColor: "white",
-                pointRadius: 1,
-                pointHitRadius: 10
-
-              }
-            ],
-          }
-          }
-          options={{
-            interaction: {
+      <div style = {{justifyContent: "space-between"}}>
+        <div style = {{width: "50%", float: "left"}}>
+          <Bar
+            data={{
+              labels: filteredDate_vac,
+              datasets: [
+                {
+                  type: 'line',
+                  label: "7-day average",
+                  data: filteredAverage_vac,
+                  backgroundColor: 'rgba(0,128,0,1)',
+                  borderColor: 'rgba(0,128,0,1)'
+                },
+                {
+                  label: "Second dose injected",
+                  data: filteredSecond_vac,
+                  backgroundColor: 'rgba(77,112,101, 0.8)'
+                },
+                {
+                  label: "First dose injected",
+                  data: filteredFirst_vac,
+                  backgroundColor: 'rgba(119,147,91, 0.8)'
+                }
+              ]
+            }}
+            options={{
+              interaction: {
                 intersect: false,
                 mode: 'index',
-            },
-            plugins: {
+              },
+              plugins: {
                 title: {
-                    display: true,
-                    text: 'COVID-19 INJECTION PROCESS IN VIETNAM',
-                    color: 'black',
-                    font: { size: 25, weight: 'bold' }
+                  display: true,
+                  text: 'COVID-19 VACCINE INJECTED',
+                  color: 'black',
+                  font: { size: 14, weight: 'bold' }
                 },
                 legend: {
-                    display: true,
-                    reverse: true
+                  display: true,
+                  reverse: true
                 },
                 tooltip: {
-                    backgroundColor: 'rgb(0,0,0,0.75)',
-                    titleColor: 'white',
-                    yAlign : "center",
-                    reverse: true
+                  backgroundColor: 'rgb(0,0,0,0.75)',
+                  titleColor: 'white',
+                  yAlign: "center",
+                  reverse: true
                 },
                 datalabels: {
-                    color: 'white'
+                  color: 'white'
                 }
-            },
-            responsive: true,
-            scales: {
+              },
+              responsive: true,
+              scales: {
                 x: {
-                    stacked: true,
-                    ticks: {
-                        font: { weight: "650" }
-                    },
-                    grid: {
-                        display: false,
-                        borderColor: 'grey',
-                    }
+                  stacked: true,
+                  ticks: {
+                    font: { weight: "650" }
+                  },
+                  grid: {
+                    display: false,
+                    borderColor: 'grey',
+                  }
                 },
                 y: {
-                    stacked: true,
-                    ticks: {
-                        font: { weight: "bold" }
-                    },
-                    title: {
-                        display: true,
-                        text: 'Doses',
-                        color: 'black',
-                        font: { size: 15, weight: 'bold', lineHeight: 1.2 }
-                    },
-                    grid: {
-                        color: 'darkgrey',
-                        borderDash: [8, 4]
-                    }
+                  stacked: true,
+                  ticks: {
+                    font: { weight: "bold" }
+                  },
+                  title: {
+                    display: true,
+                    text: 'Doses',
+                    color: 'black',
+                    font: { size: 15, weight: 'bold', lineHeight: 1.2 }
+                  },
+                  grid: {
+                    color: 'darkgrey',
+                    borderDash: [8, 4]
+                  }
                 }
+              }
+            }} />
+
+        </div>
+
+        <div style = {{width : "50%", float: "right"}}>
+          <Line
+            data={{
+              labels: filteredDatePeople,
+              datasets: [
+                {
+                  type: "line",
+                  label: "Both doses injected",
+                  backgroundColor: "#b0c7c0",
+                  borderColor: "#2f7365",
+                  fill: true,
+                  tension: 1.0,
+                  pointHoverRadius: 6,
+                  pointHoverBackgroundColor: "#2f7365",
+                  pointHoverBorderColor: "white",
+                  pointHitRadius: 10,
+                  pointRadius: 1,
+                  data: filteredSecondPeople,
+                },
+                {
+                  label: "Injected (first of both)",
+                  data: filteredFirstPeople,
+                  backgroundColor: "#d7e3e0",
+                  borderColor: "#63974b",
+                  fill: true,
+                  lineTension: 0.1,
+                  pointBackgroundColor: "#63974b",
+                  pointHoverRadius: 6,
+                  pointHoverBackgroundColor: "#63974b",
+                  pointHoverBorderColor: "white",
+                  pointRadius: 1,
+                  pointHitRadius: 10
+
+                }
+              ],
             }
-        }} 
-        />
+            }
+            options={{
+              interaction: {
+                intersect: false,
+                mode: 'index',
+              },
+              plugins: {
+                title: {
+                  display: true,
+                  text: 'COVID-19 INJECTED POPULATION PROCESS',
+                  color: 'black',
+                  font: { size: 14, weight: 'bold' }
+                },
+                legend: {
+                  display: true,
+                  reverse: true
+                },
+                tooltip: {
+                  backgroundColor: 'rgb(0,0,0,0.75)',
+                  titleColor: 'white',
+                  yAlign: "center",
+                  reverse: true
+                },
+                datalabels: {
+                  color: 'white'
+                }
+              },
+              responsive: true,
+              scales: {
+                x: {
+                  stacked: true,
+                  ticks: {
+                    font: { weight: "650" }
+                  },
+                  grid: {
+                    display: false,
+                    borderColor: 'grey',
+                  }
+                },
+                y: {
+                  stacked: true,
+                  ticks: {
+                    font: { weight: "bold" }
+                  },
+                  title: {
+                    display: true,
+                    text: 'Doses',
+                    color: 'black',
+                    font: { size: 15, weight: 'bold', lineHeight: 1.2 }
+                  },
+                  grid: {
+                    color: 'darkgrey',
+                    borderDash: [8, 4]
+                  }
+                }
+              }
+            }}
+          />
+        </div>
       </div>
     </div>
-    
+
   )
 }
 
