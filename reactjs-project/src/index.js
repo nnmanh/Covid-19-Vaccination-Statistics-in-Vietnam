@@ -10,12 +10,14 @@ import Count from './Count';
 ReactDOM.render(
   <>
     <h1>Welcome to embedded Tableau</h1>
-    <div>
+    <div style = {{textAlign: "center"}}>
       <Count />
     </div>
+    {/*
     <div>
       <VaccinationsChart3 />
     </div>
+    */}
 
     <div>
       <PeopleChart />
