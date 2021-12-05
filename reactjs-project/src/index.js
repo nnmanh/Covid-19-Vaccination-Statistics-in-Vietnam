@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Map from './Map';
 import BarChart from './BarChart';
-import { VaccinationsChart } from './VaccinationsChart';
+import VaccinationsChart3 from './VaccinationsChart';
 import PeopleChart from './PeopleChart';
 import Count from './Count';
 
@@ -14,7 +14,7 @@ ReactDOM.render(
       <Count />
     </div>
     <div>
-      <VaccinationsChart />
+      <VaccinationsChart3 />
     </div>
 
     <div>
