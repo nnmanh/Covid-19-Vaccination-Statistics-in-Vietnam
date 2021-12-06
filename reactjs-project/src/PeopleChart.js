@@ -266,7 +266,7 @@ function PeopleChart() {
                   }
                 },
                 y: {
-                  stacked: true,
+                  stacked: false,
                   ticks: {
                     font: { weight: "bold" }
                   },

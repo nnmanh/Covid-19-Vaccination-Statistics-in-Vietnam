@@ -5,6 +5,7 @@ import BarChart from './BarChart';
 import VaccinationsChart3 from './VaccinationsChart';
 import PeopleChart from './PeopleChart';
 import Count from './Count';
+import Horizontal from './Horizontal';
 
 
 ReactDOM.render(
@@ -12,6 +13,7 @@ ReactDOM.render(
     <h1>Welcome to embedded Tableau</h1>
     <div style = {{textAlign: "center"}}>
       <Count />
+      <Horizontal />
     </div>
     {/*
     <div>
