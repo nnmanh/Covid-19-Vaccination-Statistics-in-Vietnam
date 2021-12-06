@@ -1,6 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import { Line, Bar } from "react-chartjs-2";
+import Horizontal from './Horizontal';
+import CountUp from 'react-countup';
 
 
 function PeopleChart() {
@@ -22,6 +24,10 @@ function PeopleChart() {
   const [filteredSecond_vac, setfSecondVac] = useState(null)
   const [filteredAverage_vac, setfAverageVac] = useState(null)
 
+  const [first_count, setfirst_count] = useState(null)
+  const [second_count, setsecond_count] = useState(null)
+  const [total_count, settotal_count] = useState(null)
+
 
 
   useEffect(async () => {
@@ -40,7 +46,7 @@ function PeopleChart() {
     const datapoints_people = await response_people.json()
     for (const objects of datapoints_people) {
       date_people_.push(objects.date)
-      first_people_.push(objects['first_dose_injected'])
+      first_people_.push(objects['total_injected'])
       second_people_.push(objects['second_dose_injected'])
     }
 
@@ -73,7 +79,12 @@ function PeopleChart() {
     setfFirstVac(firstDose_vac_)
     setfSecondVac(secondDose_vac_)
 
+    settotal_count(first_people_[first_people_.length - 1])
+    setsecond_count(second_people_[second_people_.length - 1])
+    setfirst_count(first_people_[first_people_.length - 1] - second_people_[second_people_.length - 1])
+
   }, []);
+
   function changeDate() {
     const date_people2 = [...date_people]
     const first_people2 = [...first_people]
@@ -99,12 +110,27 @@ function PeopleChart() {
   }
   return (
     <div>
+      <div style={{ fontSize: 40, textAlign: "center", display: 'inline-flex', backgroundColor: 'green', color: 'white' }}>
+        <div style={{ marginRight: 200, marginLeft: 100 }}>
+          <h1 style={{ fontSize: 14 }}>Injected Population</h1>
+          <CountUp start={0} end={total_count} duration={2} />
+        </div>
+        <div style={{ marginRight: 200 }}>
+          <h1 style={{ fontSize: 14 }}>First Dose Injected Population</h1>
+          <CountUp start={0} end={first_count} duration={2} />
+        </div>
+        <div style={{ marginRight: 100 }}>
+          <h1 style={{ fontSize: 14 }}>Second Dose Injected Population</h1>
+          <CountUp start={0} end={second_count} duration={2} />
+        </div>
+      </div>
+
       <div style={{ textAlign: 'center' }}>
         <input onChange={changeDate} type="date" id="startdate" defaultValue='2021-08-18' />
-        <input onChange={changeDate} type="date" id="enddate" defaultValue= "2021-11-18"/>
+        <input onChange={changeDate} type="date" id="enddate" defaultValue="2021-11-18" />
       </div>
-      <div style = {{justifyContent: "space-between"}}>
-        <div style = {{width: "50%", float: "left"}}>
+      <div>
+        <div style={{ width: "50%", float: "left" }}>
           <Bar
             data={{
               labels: filteredDate_vac,
@@ -186,8 +212,7 @@ function PeopleChart() {
             }} />
 
         </div>
-
-        <div style = {{width : "50%", float: "right"}}>
+        <div style={{ width: "50%", float: "right" }}>
           <Line
             data={{
               labels: filteredDatePeople,
@@ -207,7 +232,8 @@ function PeopleChart() {
                   data: filteredSecondPeople,
                 },
                 {
-                  label: "Injected (first of both)",
+                  type: "line",
+                  label: "Injected (first or both)",
                   data: filteredFirstPeople,
                   backgroundColor: "#d7e3e0",
                   borderColor: "#63974b",
