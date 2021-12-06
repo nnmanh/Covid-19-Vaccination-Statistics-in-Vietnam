@@ -24,9 +24,6 @@ function PeopleChart() {
   const [filteredSecond_vac, setfSecondVac] = useState(null)
   const [filteredAverage_vac, setfAverageVac] = useState(null)
 
-  const [first_count, setfirst_count] = useState(null)
-  const [second_count, setsecond_count] = useState(null)
-  const [total_count, settotal_count] = useState(null)
 
 
 
@@ -78,11 +75,6 @@ function PeopleChart() {
     setfAverageVac(average_vac_)
     setfFirstVac(firstDose_vac_)
     setfSecondVac(secondDose_vac_)
-
-    settotal_count(first_people_[first_people_.length - 1])
-    setsecond_count(second_people_[second_people_.length - 1])
-    setfirst_count(first_people_[first_people_.length - 1] - second_people_[second_people_.length - 1])
-
   }, []);
 
   function changeDate() {
@@ -110,21 +102,6 @@ function PeopleChart() {
   }
   return (
     <div>
-      <div style={{ fontSize: 40, textAlign: "center", display: 'inline-flex', backgroundColor: 'green', color: 'white' }}>
-        <div style={{ marginRight: 200, marginLeft: 100 }}>
-          <h1 style={{ fontSize: 14 }}>Injected Population</h1>
-          <CountUp start={0} end={total_count} duration={2} />
-        </div>
-        <div style={{ marginRight: 200 }}>
-          <h1 style={{ fontSize: 14 }}>First Dose Injected Population</h1>
-          <CountUp start={0} end={first_count} duration={2} />
-        </div>
-        <div style={{ marginRight: 100 }}>
-          <h1 style={{ fontSize: 14 }}>Second Dose Injected Population</h1>
-          <CountUp start={0} end={second_count} duration={2} />
-        </div>
-      </div>
-
       <div style={{ textAlign: 'center' }}>
         <input onChange={changeDate} type="date" id="startdate" defaultValue='2021-08-18' />
         <input onChange={changeDate} type="date" id="enddate" defaultValue="2021-11-18" />
@@ -279,7 +256,7 @@ function PeopleChart() {
               responsive: true,
               scales: {
                 x: {
-                  stacked: true,
+                  stacked: false,
                   ticks: {
                     font: { weight: "650" }
                   },
