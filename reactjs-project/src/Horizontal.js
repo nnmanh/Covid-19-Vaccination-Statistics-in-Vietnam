@@ -64,7 +64,7 @@ const Horizontal = () => {
         <div style = {{backgroundColor: "rgb(238, 243, 244)", padding: "70px"}}>
         <div >
             <div style = {{textAlign: 'center'}}>
-                <input onChange={changeDate} type="date" id="startdate_" defaultValue='2021-11-11' />
+                <input onChange={changeDate} type="date" id="startdate_" defaultValue='2021-11-18' max = '2021-11-18' min = '2021-08-18'  />
             </div>
             <div className="graph_item">
                 <Bar
