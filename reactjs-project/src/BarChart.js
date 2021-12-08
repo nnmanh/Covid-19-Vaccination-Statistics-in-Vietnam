@@ -1,8 +1,14 @@
 import React, {useRef, useEffect} from 'react';
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 const { tableau } = window;
 
 function BarChart() {
+    useEffect (()=> {
+        Aos.init ({duration :3000})
+    })
+
     const ref = useRef(null);
 
     const url = "https://public.tableau.com/views/BarChart_16374635426590/DeathsbyProvince?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link"
@@ -17,7 +23,7 @@ function BarChart() {
     }, [])
 
     return (
-        <div style = {{marginTop: "50px", marginLeft: "150px", marginRight: "100px"}}>
+        <div data-aos = "fade-up" style = {{marginTop: "50px", marginLeft: "150px", marginRight: "100px"}}>
             <div ref={ref} style={{width: '1200px', height: '400px'}}>
             </div>
 
