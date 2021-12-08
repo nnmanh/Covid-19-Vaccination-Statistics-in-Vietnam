@@ -1,6 +1,9 @@
 
 import React, { useEffect, useState } from 'react';
 import { Line, Bar } from "react-chartjs-2";
+import Aos from 'aos';
+//npm install aos --save
+import "aos/dist/aos.css"
 
 
 function PeopleChart() {
@@ -23,7 +26,9 @@ function PeopleChart() {
   const [filteredAverage_vac, setfAverageVac] = useState(null)
 
 
-
+  useEffect(() => {
+    Aos.init({ duration: 2000 })
+  })
 
   useEffect(async () => {
     var date_people_ = []
@@ -100,7 +105,7 @@ function PeopleChart() {
   }
   return (
 
-    <div style={{padding: "50px 0"}}>
+    <div data-aos = "fade-up" style={{padding: "50px 0"}}>
       <div style = {{marginLeft : "200px", marginRight: "200px"}}>
         <hr/>
       </div>
@@ -112,7 +117,7 @@ function PeopleChart() {
       </div>
       <div >
      
-        <div style={{ width: "45%", float: "left", marginLeft: "50px", marginBottom: "50px"}}>
+        <div data-aos="fade-left" style={{ width: "45%", float: "left", marginLeft: "50px", marginBottom: "50px"}}>
           <Bar
             data={{
               labels: filteredDate_vac,
@@ -196,7 +201,7 @@ function PeopleChart() {
             }} />
 
         </div>
-        <div style={{ width: "45%", float: "right", marginRight: "50px" }}>
+        <div data-aos = "fade-right" style={{ width: "45%", float: "right", marginRight: "50px" }}>
           <Line
             data={{
               labels: filteredDatePeople,

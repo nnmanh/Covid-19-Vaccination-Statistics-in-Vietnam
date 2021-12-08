@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Bar } from 'react-chartjs-2'
 import ChartDataLabels from 'chartjs-plugin-datalabels'
+import Aos from 'aos'; //npm install aos --save
+import "aos/dist/aos.css"
 
 
 const Horizontal = () => {
@@ -13,6 +15,10 @@ const Horizontal = () => {
     const [filteredFirst, setfFirst] = useState(null)
     const [filteredSecond, setfSecond] = useState(null)
     const [filteredTotal, setfTotal] = useState(null)
+
+    useEffect( () => {
+        Aos.init({ duration: 2000 })
+    })
 
     useEffect(async () => {
 
@@ -61,7 +67,7 @@ const Horizontal = () => {
         console.log(filteredDate)
     }
     return (
-        <div style = {{backgroundColor: "rgb(238, 243, 244)", padding: "70px"}}>
+        <div data-aos = "fade-up" style = {{backgroundColor: "rgb(238, 243, 244)", padding: "70px"}}>
         <div >
             <div style = {{textAlign: 'center'}}>
                 <input onChange={changeDate} type="date" id="startdate_" defaultValue='2021-11-18' max = '2021-11-18' min = '2021-08-18'  />
