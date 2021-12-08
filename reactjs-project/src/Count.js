@@ -1,7 +1,6 @@
 import CountUp from 'react-countup';
 import React, {useState, useEffect} from 'react';
 
-
 function Count() {
     const [total_count, set_total] = useState (null)
     const [second_count, set_second] = useState (null)
@@ -20,20 +19,21 @@ function Count() {
     console.log(first_count)
 
     return (
-        <div>
-            <div style={{ fontSize: 40, textAlign: "center", display: 'inline-flex', backgroundColor: 'green', color: 'white' }}>
+      
+        <div style={{padding: "30px"}}>
+            <div style={{ fontSize: 50, textAlign: "center", display: 'inline-flex', color: 'orange', fontFamily: "Arial" }}>
 
-                <div style={{ marginRight: 200, marginLeft: 100 }}>
-                    <h1 style={{ fontSize: 14 }}>Injected Population</h1>
-                    <CountUp start={0} end={total_count} duration={2} />
+                <div style={{ marginRight: 200, marginLeft: 30 }}>
+                    <h1 style={{ fontSize: 18, lineHeight: "1.6", color: "white"}}>Total Dose Injected </h1>
+                    <CountUp style = {{fontFamily: "helvetica"}} start={0} end={total_count} duration={4} separator="," />
                 </div>
                 <div style={{ marginRight: 200 }}>
-                    <h1 style={{ fontSize: 14 }}>First Dose Injected Population</h1>
-                    <CountUp start={0} end={first_count} duration={2} />
+                    <h1 style={{ fontSize: 18, lineHeight: "1.6" ,color: "white"}}>First Dose Injected </h1>
+                    <CountUp style = {{fontFamily: "helvetica"}} start={0} end={first_count} duration={4} separator="," />
                 </div>
                 <div style={{ marginRight: 100 }}>
-                    <h1 style={{ fontSize: 14 }}>Second Dose Injected Population</h1>
-                    <CountUp start={0} end={second_count} duration={2} />
+                    <h1 style={{ fontSize: 18, lineHeight: "1.6",color: "white" }}>Second Dose Injected </h1>
+                    <CountUp style = {{fontFamily: "helvetica"}} start={0} end={second_count} duration={4} separator="," />
                 </div>
             </div>
         </div>

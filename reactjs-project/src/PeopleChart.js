@@ -1,8 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { Line, Bar } from "react-chartjs-2";
-import Horizontal from './Horizontal';
-import CountUp from 'react-countup';
 
 
 function PeopleChart() {
@@ -101,13 +99,20 @@ function PeopleChart() {
     setfAverageVac(average_vac2.slice(indexstartdate, indexenddate + 1))
   }
   return (
-    <div>
-      <div style={{ textAlign: 'center' }}>
-        <input onChange={changeDate} type="date" id="startdate" defaultValue='2021-08-18' min = "2021-08-18" max = "2021-11-17" />
-        <input onChange={changeDate} type="date" id="enddate" defaultValue="2021-11-18" min = "2021-08-19" max = "2021-11-18" />
+
+    <div style={{padding: "50px 0"}}>
+      <div style = {{marginLeft : "200px", marginRight: "200px"}}>
+        <hr/>
       </div>
-      <div>
-        <div style={{ width: "50%", float: "left" }}>
+      <div style={{ textAlign: 'center' , marginTop:"50px"}}>
+        <h1 style={{fontFamily : "arial"}}> Vaccine Statistics</h1>
+        <input onChange={changeDate} type="date" id="startdate" defaultValue='2021-08-18' />
+        <input onChange={changeDate} type="date" id="enddate" defaultValue="2021-11-18" />
+
+      </div>
+      <div >
+     
+        <div style={{ width: "45%", float: "left", marginLeft: "50px", marginBottom: "50px"}}>
           <Bar
             data={{
               labels: filteredDate_vac,
@@ -141,7 +146,9 @@ function PeopleChart() {
                   display: true,
                   text: 'COVID-19 VACCINE INJECTED',
                   color: 'black',
-                  font: { size: 14, weight: 'bold' }
+                  font: { size: 14, weight: 'bold' },
+                  position : "top",
+                  align : "left"
                 },
                 legend: {
                   display: true,
@@ -189,7 +196,7 @@ function PeopleChart() {
             }} />
 
         </div>
-        <div style={{ width: "50%", float: "right" }}>
+        <div style={{ width: "45%", float: "right", marginRight: "50px" }}>
           <Line
             data={{
               labels: filteredDatePeople,
@@ -237,7 +244,9 @@ function PeopleChart() {
                   display: true,
                   text: 'COVID-19 INJECTED POPULATION PROCESS',
                   color: 'black',
-                  font: { size: 14, weight: 'bold' }
+                  font: { size: 14, weight: 'bold' },
+                  position : "top",
+                  align : "left"
                 },
                 legend: {
                   display: true,
@@ -285,7 +294,9 @@ function PeopleChart() {
             }}
           />
         </div>
+        
       </div>
+      
     </div>
 
   )

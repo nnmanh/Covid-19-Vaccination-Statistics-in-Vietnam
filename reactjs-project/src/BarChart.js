@@ -17,11 +17,8 @@ function BarChart() {
     }, [])
 
     return (
-        <div>
-            
-            <p>Vertical Bar Chart</p>
-
-            <div ref={ref} style={{width: '1500px', height: '600px'}}>
+        <div style = {{marginTop: "50px", marginLeft: "150px", marginRight: "100px"}}>
+            <div ref={ref} style={{width: '1200px', height: '400px'}}>
             </div>
 
             

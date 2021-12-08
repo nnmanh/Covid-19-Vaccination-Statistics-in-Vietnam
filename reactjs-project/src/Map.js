@@ -1,5 +1,6 @@
 import React, {useRef, useEffect} from 'react';
 
+
 const { tableau } = window;
 
 function Map() {
@@ -17,14 +18,15 @@ function Map() {
     }, [])
 
     return (
-        <div>
+        <div style = {{backgroundColor: "rgb(238, 243, 244)"}}>
+        <div style= {{color: "#fff", marginTop: "350px", marginLeft: "200px" , marginRight: "200px", padding: "100px 0"}}>
+            <h1 style = {{textAlign : "center", color : "black", fontFamily: "arial", marginTop: "-50px", marginBottom: "40px"}}> Map Visualisation</h1>
             
-            <p>Map!</p>
-
-            <div ref={ref} style={{width: '1500px', height: '600px'}}>
+            <div ref={ref} style={{width: '1200px', height: '600px'}}>
             </div>
-
             
+            
+        </div>
         </div>
     );
 }

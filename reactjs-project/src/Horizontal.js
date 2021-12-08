@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Bar } from 'react-chartjs-2'
 import ChartDataLabels from 'chartjs-plugin-datalabels'
 
+
 const Horizontal = () => {
     const [date, setDate] = useState(null)
     const [firstDose, setFirst] = useState(null)
@@ -60,11 +61,12 @@ const Horizontal = () => {
         console.log(filteredDate)
     }
     return (
+        <div style = {{backgroundColor: "rgb(238, 243, 244)", padding: "70px"}}>
         <div >
             <div style = {{textAlign: 'center'}}>
                 <input onChange={changeDate} type="date" id="startdate_" defaultValue='2021-11-11' />
             </div>
-            <div >
+            <div className="graph_item">
                 <Bar
                     data={{
                         labels: filteredDate,
@@ -117,7 +119,7 @@ const Horizontal = () => {
                             datalabels: {
                                display: true,
                                color: "white",
-                               font: {size:30, weight:"bold"}
+                               font: {size:25, weight:"bold"}
                             },
                             legend: {
                                 font: {weight: "bold"}
@@ -126,7 +128,7 @@ const Horizontal = () => {
                                 display: true,
                                 text: 'Share of people vaccinated against COVID-19 (%)',
                                 color: '#black',
-                                font: {size: 40, weight: 'bold'}
+                                font: {size: 40, weight: 'bold',family: "Times New Roman, Times, serif"}
                             },
                             subtitle: {
                                 display: true,
@@ -142,6 +144,7 @@ const Horizontal = () => {
                     }}
                      />
             </div>
+        </div>
         </div>
     )
 }
