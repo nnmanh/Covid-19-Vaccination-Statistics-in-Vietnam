@@ -103,8 +103,8 @@ function PeopleChart() {
   return (
     <div>
       <div style={{ textAlign: 'center' }}>
-        <input onChange={changeDate} type="date" id="startdate" defaultValue='2021-08-18' />
-        <input onChange={changeDate} type="date" id="enddate" defaultValue="2021-11-18" />
+        <input onChange={changeDate} type="date" id="startdate" defaultValue='2021-08-18' min = "2021-08-18" max = "2021-11-17" />
+        <input onChange={changeDate} type="date" id="enddate" defaultValue="2021-11-18" min = "2021-08-19" max = "2021-11-18" />
       </div>
       <div>
         <div style={{ width: "50%", float: "left" }}>
