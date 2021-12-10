@@ -2,28 +2,27 @@
 import React, { useEffect, useState } from 'react';
 import { Line, Bar } from "react-chartjs-2";
 import Aos from 'aos';
-//npm install aos --save
 import "aos/dist/aos.css"
 
 
 function PeopleChart() {
-  const [date_people, setDatePeople] = useState(null)
-  const [first_people, setFirstPeople] = useState(null)
-  const [second_people, setSecondPeople] = useState(null)
+  const [date_people, setDatePeople] = useState()
+  const [first_people, setFirstPeople] = useState()
+  const [second_people, setSecondPeople] = useState()
 
-  const [filteredDatePeople, setfDatePeople] = useState(null)
-  const [filteredFirstPeople, setfFirstPeople] = useState(null)
-  const [filteredSecondPeople, setfSecondPeople] = useState(null)
+  const [filteredDatePeople, setfDatePeople] = useState()
+  const [filteredFirstPeople, setfFirstPeople] = useState()
+  const [filteredSecondPeople, setfSecondPeople] = useState()
 
-  const [average_vac, setAverageVac] = useState(null)
-  const [date_vac, setDateVac] = useState(null)
-  const [firstDose_vac, setFirstVac] = useState(null)
-  const [secondDose_vac, setSecondVac] = useState(null)
+  const [average_vac, setAverageVac] = useState()
+  //const [date_vac, setDateVac] = useState()
+  const [firstDose_vac, setFirstVac] = useState()
+  const [secondDose_vac, setSecondVac] = useState()
 
-  const [filteredDate_vac, setfDateVac] = useState(null)
-  const [filteredFirst_vac, setfFirstVac] = useState(null)
-  const [filteredSecond_vac, setfSecondVac] = useState(null)
-  const [filteredAverage_vac, setfAverageVac] = useState(null)
+  const [filteredDate_vac, setfDateVac] = useState()
+  const [filteredFirst_vac, setfFirstVac] = useState()
+  const [filteredSecond_vac, setfSecondVac] = useState()
+  const [filteredAverage_vac, setfAverageVac] = useState()
 
 
   useEffect(() => {
@@ -72,7 +71,7 @@ function PeopleChart() {
     setAverageVac(average_vac_)
     setFirstVac(firstDose_vac_)
     setSecondVac(secondDose_vac_)
-    setDateVac(date_vac_)
+    //setDateVac(date_vac_)
 
     setfDateVac(date_vac_)
     setfAverageVac(average_vac_)
@@ -81,27 +80,27 @@ function PeopleChart() {
   }, []);
 
   function changeDate() {
-    const date_people2 = [...date_people]
+    /*const date_people2 = [...date_people]
     const first_people2 = [...first_people]
     const second_people2 = [...second_people]
 
     const first_vac2 = [...firstDose_vac]
     const second_vac2 = [...secondDose_vac]
-    const average_vac2 = [...average_vac]
+    const average_vac2 = [...average_vac]*/
 
     const startdate = document.getElementById('startdate');
     const enddate = document.getElementById('enddate');
-    const indexstartdate = date_people2.indexOf(startdate.value)
-    const indexenddate = date_people2.indexOf(enddate.value)
+    const indexstartdate = date_people.indexOf(startdate.value)
+    const indexenddate = date_people.indexOf(enddate.value)
 
-    setfDatePeople(date_people2.slice(indexstartdate, indexenddate + 1))
-    setfFirstPeople(first_people2.slice(indexstartdate, indexenddate + 1))
-    setfSecondPeople(second_people2.slice(indexstartdate, indexenddate + 1))
+    setfDatePeople(date_people.slice(indexstartdate, indexenddate + 1))
+    setfFirstPeople(first_people.slice(indexstartdate, indexenddate + 1))
+    setfSecondPeople(second_people.slice(indexstartdate, indexenddate + 1))
 
-    setfDateVac(date_people2.slice(indexstartdate, indexenddate + 1))
-    setfFirstVac(first_vac2.slice(indexstartdate, indexenddate + 1))
-    setfSecondVac(second_vac2.slice(indexstartdate, indexenddate + 1))
-    setfAverageVac(average_vac2.slice(indexstartdate, indexenddate + 1))
+    setfDateVac(date_people.slice(indexstartdate, indexenddate + 1))
+    setfFirstVac(firstDose_vac.slice(indexstartdate, indexenddate + 1))
+    setfSecondVac(secondDose_vac.slice(indexstartdate, indexenddate + 1))
+    setfAverageVac(average_vac.slice(indexstartdate, indexenddate + 1))
   }
   return (
 
@@ -111,8 +110,8 @@ function PeopleChart() {
       </div>
       <div style={{ textAlign: 'center' , marginTop:"50px"}}>
         <h1 style={{fontFamily : "arial"}}> Vaccine Statistics</h1>
-        <input onChange={changeDate} type="date" id="startdate" defaultValue='2021-08-18' max = "2021-11-18" min = "2021-08-19" />
-        <input onChange={changeDate} type="date" id="enddate" defaultValue="2021-11-18" max = "2021-11-17" min = "2021-08-18" />
+        <input onChange={changeDate} type="date" id="startdate" defaultValue='2021-08-18' max = "2021-11-17" min = "2021-08-18" />
+        <input onChange={changeDate} type="date" id="enddate" defaultValue="2021-11-18" max = "2021-11-18" min = "2021-08-19" />
 
       </div>
       <div >
@@ -153,7 +152,8 @@ function PeopleChart() {
                   color: 'black',
                   font: { size: 14, weight: 'bold' },
                   position : "top",
-                  align : "left"
+                  align : "left",
+                  delay: 3000
                 },
                 legend: {
                   display: true,
@@ -251,7 +251,8 @@ function PeopleChart() {
                   color: 'black',
                   font: { size: 14, weight: 'bold' },
                   position : "top",
-                  align : "left"
+                  align : "left",
+                  delay: 3000
                 },
                 legend: {
                   display: true,

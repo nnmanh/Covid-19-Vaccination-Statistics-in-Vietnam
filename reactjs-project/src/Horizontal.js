@@ -51,18 +51,18 @@ const Horizontal = () => {
     );
 
     function changeDate() {
-        const date_2 = [...date]
+        /*const date_2 = [...date]
         const first_2 = [...firstDose]
         const second_2 = [...secondDose]
-        const total_2 = [...totalDose]
+        const total_2 = [...totalDose]*/
 
         const startdate = document.getElementById('startdate_');
-        const indexstartdate = date_2.indexOf(startdate.value)
+        const indexstartdate = date.indexOf(startdate.value)
 
-        setfDate(date_2.slice(indexstartdate, indexstartdate + 1))
-        setfFirst(first_2.slice(indexstartdate, indexstartdate + 1))
-        setfSecond(second_2.slice(indexstartdate, indexstartdate + 1))
-        setfTotal(total_2.slice(indexstartdate, indexstartdate + 1))
+        setfDate(date.slice(indexstartdate, indexstartdate + 1))
+        setfFirst(firstDose.slice(indexstartdate, indexstartdate + 1))
+        setfSecond(secondDose.slice(indexstartdate, indexstartdate + 1))
+        setfTotal(totalDose.slice(indexstartdate, indexstartdate + 1))
 
         console.log(filteredDate)
     }
