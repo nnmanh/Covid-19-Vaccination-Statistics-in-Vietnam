@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
 import {
   HeaderContainer,
   HeaderContent,
@@ -7,18 +6,14 @@ import {
   HeaderH1,
   HeaderP,
 } from './HeaderStyle';
-import Aos from 'aos';
 import Count from './Count';
 
 const Header = () => {
-  useEffect(() => {
-    Aos.init({duration: 3000})
-  })
   return (
-    <HeaderContainer data-aos = "fade-up">
+    <HeaderContainer>
       <HeaderContent>
         <HeaderItems>
-          <HeaderH1>COVID-19 Vaccination Statistics in Vietnam</HeaderH1>
+          <HeaderH1>Covid-19 Vaccination Statistics in Vietnam</HeaderH1>
           <HeaderP>From August to November 2021</HeaderP>
           <Count/>
         </HeaderItems>

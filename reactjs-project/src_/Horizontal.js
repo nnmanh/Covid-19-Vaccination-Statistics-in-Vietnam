@@ -42,15 +42,13 @@ const Horizontal = () => {
         setFirst(firstDose_)
         setDate(date_)
 
-        setfDate(['2021-11-18'])
-        setfTotal([67.02])
-        setfSecond([39])
-        setfFirst([28.02])
+        setfDate(['2021-11-11'])
+        setfTotal([64.9])
+        setfSecond([33.5])
+        setfFirst([31.4])
     },
         []
     );
-
-    console.log(date)
 
     function changeDate() {
         /*const date_2 = [...date]
