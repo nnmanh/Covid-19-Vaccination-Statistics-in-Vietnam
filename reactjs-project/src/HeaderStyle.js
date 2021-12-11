@@ -1,9 +1,18 @@
 import styled from 'styled-components';
 import ImgBg from './sen-jam.jpg';
+import ImgBg2 from './pic2.jpg'
 
 export const HeaderContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url(${ImgBg});
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+`;
+
+export const HeaderContainer2 = styled.div`
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url(${ImgBg2});
   height: 90vh;
   background-position: center;
   background-size: cover;

@@ -103,7 +103,7 @@ function PeopleChart() {
     setfAverageVac(average_vac.slice(indexstartdate, indexenddate + 1))
   }
   return (
-
+    <div style = {{marginBottom: "300px"}}>
     <div data-aos = "fade-up" style={{padding: "50px 0"}}>
       <div style = {{marginLeft : "200px", marginRight: "200px"}}>
         <hr/>
@@ -302,7 +302,7 @@ function PeopleChart() {
         </div>
         
       </div>
-      
+      </div>
     </div>
 
   )

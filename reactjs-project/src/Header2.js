@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import {
-  HeaderContainer,
+  HeaderContainer2,
   HeaderContent,
   HeaderItems,
   HeaderH1,
@@ -10,21 +10,20 @@ import {
 import Aos from 'aos';
 import Count from './Count';
 
-const Header = () => {
+const Header2 = () => {
   useEffect(() => {
     Aos.init({duration: 3000})
   })
   return (
-    <HeaderContainer >
-      <HeaderContent data-aos = "fade-up">
+    <HeaderContainer2 >
+      <HeaderContent data-aos = "fade-right">
         <HeaderItems>
-          <HeaderH1>COVID-19 Vaccination Statistics in Vietnam</HeaderH1>
-          <HeaderP>From August to November 2021</HeaderP>
-          <Count/>
+          <HeaderH1> More Than 1,000,000 Cases Reported</HeaderH1>
+          <HeaderP> Statistics for 63 provinces</HeaderP>
         </HeaderItems>
       </HeaderContent>
-    </HeaderContainer>
+    </HeaderContainer2>
   );
 };
 
-export default Header;
+export default Header2;
